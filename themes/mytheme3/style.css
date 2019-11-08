@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*
+Theme Name: MY THEME 3
+Author: MONIKER
+Description: オリジナルテーマです
+Version: 1.0
+*/
+
+.alignleft {
+	float: left;
+	margin-left: 0;
+	margin-right: 1em;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1em;
+	margin-right: 0;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-block-categories.aligncenter,
+.wp-block-latest-posts.aligncenter,
+.wp-block-archives.aligncenter,
+.wp-block-tag-cloud.aligncenter,
+.wp-block-latest-comments.aligncenter,
+.wp-block-rss.aligncenter {
+	text-align: center;
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+body *,
+body *::before,
+body *::after {
+	box-sizing: inherit;
+}
+
+
+/* 変数 */
+:root {
+	--f1: 2.44em; /* 39.04px */
+	--f2: 1.95em; /* 31.2px */
+	--f3: 1.56em; /* 24.96px */
+	--f4: 1.25em; /* 20px */
+	--f5: 1em;    /* 16px */
+	--f6: 0.8em;  /* 12.8px */
+
+	--basecolor: #63a211; /* 基本色 */
+}
+
+
+/* フォント */
+body {
+	font-family: sans-serif;
+}
+
+p {
+	line-height: 1.8;
+	font-size: var(--f5);
+}
+
+h1 {
+	font-size: var(--f1);
+}
+h2 {
+	font-size: var(--f2);
+}
+h3 {
+	font-size: var(--f3);
+}
+h4 {
+	font-size: var(--f4);
+}
+h5 {
+	font-size: var(--f5);
+}
+h6 {
+	font-size: var(--f6);
+}
+
+h2 {
+	border-left: solid 14px var(--basecolor);
+	padding-left: 14px;
+}
+
+
+/* 横幅 */
+body {
+	margin: 0;
+}
+
+.mycontainer {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+@media (min-width: 740px) {
+	.mycontainer {
+		max-width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

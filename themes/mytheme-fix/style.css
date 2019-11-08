@@ -1,0 +1,550 @@
+@charset "UTF-8";
+/*
+Theme Name: MY THEME FIX
+Author: MONIKER
+Description: オリジナルテーマです
+Version: 1.0
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignleft {
+	float: left;
+	margin-left: 0;
+	margin-right: 1em;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1em;
+	margin-right: 0;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-block-categories.aligncenter,
+.wp-block-latest-posts.aligncenter,
+.wp-block-archives.aligncenter,
+.wp-block-tag-cloud.aligncenter,
+.wp-block-latest-comments.aligncenter,
+.wp-block-rss.aligncenter {
+	text-align: center;
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+body *,
+body *::before,
+body *::after {
+	box-sizing: inherit;
+}
+
+
+/* 変数 */
+:root {
+	--f1: 2.44em; /* 39.04px */
+	--f2: 1.95em; /* 31.2px */
+	--f3: 1.56em; /* 24.96px */
+	--f4: 1.25em; /* 20px */
+	--f5: 1em;    /* 16px */
+	--f6: 0.8em;  /* 12.8px */
+
+	--basecolor: #63a211; /* 基本色 */
+	--gradient: linear-gradient( 79.7deg,  rgba(34,126,34,1) 8.2%, rgba(99,162,17,1) 84.9% ); 
+
+	--myfont: 'Josefin Sans', sans-serif;
+
+	--myw: 720px; /* 標準幅 */
+}
+
+
+/* フォント */
+body {
+	font-family: sans-serif;
+}
+
+p {
+	line-height: 1.8;
+	font-size: var(--f5);
+}
+
+h1 {
+	font-size: var(--f1);
+}
+h2 {
+	font-size: var(--f2);
+}
+h3 {
+	font-size: var(--f3);
+}
+h4 {
+	font-size: var(--f4);
+}
+h5 {
+	font-size: var(--f5);
+}
+h6 {
+	font-size: var(--f6);
+}
+
+
+/* 横幅 */
+body {
+	margin: 0;
+}
+
+.mycontainer {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.mycontainer > .alignfull {
+	margin-left: -10px;
+	margin-right: -10px;
+	max-width: none;
+	width: auto;
+}
+
+@media (min-width: 740px) {
+
+	.mycontainer {
+		max-width: none;
+		margin-left: calc( ( 100vw - var(--myw) ) / 2 );
+		margin-right: calc( ( 100vw - var(--myw) ) / 2 );
+	}
+
+	.mycontainer > .alignfull {
+		margin-left: calc( ( 100vw - var(--myw) ) / 2 * -1 );
+		margin-right: calc( ( 100vw - var(--myw) ) / 2 * -1 );
+	}
+
+	.mycontainer > .alignwide {
+		margin-left: calc( ( 100vw - var(--myw) ) / 4 * -1 );
+		margin-right: calc( ( 100vw - var(--myw) ) / 4 * -1 );
+		max-width: none;
+		width: auto;
+	}
+}
+
+@media (min-width: 1320px ) { 
+	.mycontainer > .alignwide {
+		margin-left: -150px;
+		margin-right: -150px;
+	}
+}
+
+
+/* 記事に関する情報 */
+.myposthead {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.myposthead p {
+	color: var(--basecolor);
+	font-family: var(--myfont);
+	font-weight: bold;
+}
+
+/* リンク */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+/* 記事が属するカテゴリー */
+.post-categories {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	list-style-type: none;
+}
+
+.post-categories li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.post-categories a {
+	padding: 3px 10px;
+	border: solid 1px currentColor;
+	border-radius: 10px;
+	color: var(--basecolor);	
+	font-size: var(--f6);
+}
+
+.post-categories::before {
+	content: "\f318";
+	font-family: "dashicons";
+	color: var(--basecolor);
+	font-size: var(--f2);
+	line-height: 1;
+	margin-right: 5px;
+}
+
+/* スクリーンリーダー用のテキスト */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+/* 前後の記事へのリンク */
+.nav-links {
+	display: flex;
+	margin: 30px 0;
+	font-size: var(--f6);
+}
+
+.nav-previous {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.nav-next {
+	flex: 1;
+	margin-left: 10px;
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.nav-previous::before {
+	content: "\f141";
+}
+
+.nav-next::after {
+	content: "\f139";
+}
+
+.nav-previous::before, .nav-next::after {
+	font-family: "dashicons";
+	color: var(--basecolor);
+	font-size: var(--f2);
+	line-height: 1;
+}
+
+/* ヘッダー */
+.myhead > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	color: #444444;
+}
+
+.myhead a {
+	font-size: var(--f3);
+	font-family: var(--myfont);
+}
+
+.myhead p {
+	margin: 0;
+	font-size: var(--f6);
+}
+
+/* フッター */
+.myfoot {
+	padding: 16px;
+	background-color: var(--basecolor);
+	background-image: var(--gradient);
+	color: #ffffff;
+	text-align: center;
+	font-family: var(--myfont);
+}
+
+/* 記事一覧 */
+.mypostlist {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.mypostlist article {
+	width: 48%;
+	margin-bottom: 20px;
+}
+
+.mypostlist figure {
+	margin: 0;
+}
+
+.mypostlist img {
+	height: 180px;
+	object-fit: cover;
+}
+
+.mypostlist h2,
+.mypostlist h3 {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: var(--f6);
+}
+
+/* 関連記事 */
+.myrelated {
+	border: solid 2px var(--basecolor);
+	padding: 0 10px;
+}
+
+.myrelated h2 {
+	border-left: solid 14px var(--basecolor);
+	padding-left: 14px;
+	border-width: 5px;
+	color: var(--basecolor);
+	font-family: var(--myfont);
+	font-size: var(--f5);
+}
+
+.myrelated img {
+	height: 120px;
+}
+
+@media (min-width: 740px) {
+	.myrelated article {
+		width: 24%;
+	}
+
+	.myrelated .mypostlist {
+		justify-content: flex-start;
+	}
+
+	.myrelated article:not(:last-child) {
+		margin-right: calc( 4% / 3 );
+	}
+}
+
+/* ページネーション */
+.pagination .nav-links {
+	margin-bottom: 50px;
+	justify-content: center;
+}
+
+.pagination .page-numbers:not(:last-child) {
+	margin-right: 15px;
+}
+
+.pagination a {
+	color: var(--basecolor);
+}
+
+.pagination .current {
+	color: #aaaaaa;
+}
+
+
+/* メニュー */
+.mymenu {
+	margin-top: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #fbf6e8;
+}
+
+.mymenu h2 {
+	padding: 10px;
+	border: none;
+	background-color: var(--basecolor);
+	color: #ffffff;
+	font-family: var(--myfont);
+	font-size: var(--f5);
+}
+
+.myprofile figure {
+	text-align: center;
+}
+
+.myprofile img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.myprofile strong {
+	display: block;
+	text-align: center;
+	font-family: var(--myfont);
+}
+
+.myprofile p {
+	font-size: var(--f6);
+}
+
+.widget ul {
+	padding: 0;
+	list-style-type: none;
+	font-size: var(--f6);
+}
+
+.widget li:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.widget select {
+	width: 100%;
+	height: 40px;
+	border: solid 1px #aaaaaa;
+}
+
+@media (min-width: 740px) {
+	.mymenu-columns {
+		columns: 3;
+		column-gap: 30px;
+	}
+
+	.mymenu-columns > section {
+		position: relative;
+		overflow: hidden;
+		break-inside: avoid;
+	}
+}
+
+
+/* 上下の余白 */
+.mymargin {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+/* お問い合わせ */
+.wpcf7-text,
+.wpcf7-textarea {
+	width: 100%;
+	padding: 10px;
+	border: solid 1px #bbbbbb;
+}
+
+.wpcf7-submit {
+	width: 250px;
+	padding: 10px;
+	border: none;
+	background-color: #ffaa00;
+	-webkit-appearance: none;
+}
+
+
+/* ナビゲーションメニュー */
+.mynav {
+	padding: 7px 0;
+	background-image: var(--gradient);
+	color: #ffffff;
+	font-size: var(--f6);
+}
+
+.mynav ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.mynav li:not(:last-child) {
+	margin-right: 1em;
+}
+
+/* シェアボタン */
+.myshare {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.myshare h2 {
+	padding: 0;
+	border: none;
+	color: var(--basecolor);
+	font-family: var(--myfont);
+	font-size: var(--f5);
+	text-align: center;
+	line-height: 1.2;
+}
+
+.myshare .mytwitter {
+	color: #1da1f2;
+}
+
+.myshare .myfacebook {
+	color: #3b5998;	
+}
+
+.myshare a {
+	width: 49%;
+	padding: 10px;
+	border: solid 1px currentColor;
+	line-height: 1;
+	text-align: center;
+}
+
+
+/* ２段組み */
+@media (min-width: 1320px) {
+
+	.mycols .mycontainer,
+	.mycols .alignwide,
+	.mycols .alignfull {
+		width: auto;
+		max-width: none;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.mycols .mymenu-columns {
+		columns: 1;
+	}
+
+	.mycols {
+		display: flex;
+		margin: 50px calc( ( 100vw - 1020px ) / 2 );
+		justify-content: space-between;
+	}
+
+	.mycols .mycontent {
+		width: 68%;
+	}
+
+	.mycols .mymenu {
+		width: 26%;
+		margin-top: 0;
+		padding: 10px;
+	}
+
+}
+
+
+/* カラムブロックのレスポンシブ */
+@media (min-width: 600px) and (max-width: 781px) {
+	.myresp {
+		flex-wrap: nowrap;
+	}
+
+	.myresp > *:not(:first-child) {
+		margin-left: 10px;
+	}
+}
