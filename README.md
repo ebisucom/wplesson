@@ -1,5 +1,6 @@
 # 『WordPressレッスンブック 5.x対応版』 ダウンロードデータ
 
+![WordPressレッスンブック 5.x対応版](https://repository-images.githubusercontent.com/212756777/6d57d000-021d-11ea-89a6-ffab78937966)
 
 * [サポートサイト](https://www.socym.co.jp/book/1240/) 
 * [書籍情報](https://ebisu.com/wplesson/)
