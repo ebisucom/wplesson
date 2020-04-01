@@ -13,7 +13,7 @@
 
 **まずは「[最新情報PDF（latest.pdf）](https://github.com/ebisucom/wplesson/blob/master/latest.pdf)」に目を通してご利用ください。**
 
-- 本書で作成するテーマは **WordPress 5.3.2** で問題なく動作することを確認しました。書籍内容の修正はありません。［2019年12月19日］
+- **WordPress 5.4** のテーマへの影響と対処方法について、最新情報PDFに追加しました。［2020年4月1日］
 
 - 最新の情報はTwitter ( https://twitter.com/ebisucom ) で発信していますので、参考にしてください。
 
