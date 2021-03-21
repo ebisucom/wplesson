@@ -47,7 +47,16 @@ h2 {
 	padding-left: 14px;
 }
 
+[data-align="center"] .wp-block-categories,
+[data-align="center"] .wp-block-latest-posts,
+[data-align="center"] .wp-block-archives,
+[data-align="center"] .wp-block-tag-cloud,
+[data-align="center"] .wp-block-latest-comments,
+[data-align="center"] .wp-block-rss {
+	text-align: center;
+}
+
 /* 横幅 */
 .wp-block {
-    max-width: calc( 720px + 30px );
+    max-width: 720px;
 }

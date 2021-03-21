@@ -13,7 +13,7 @@
 
 **まずは「[最新情報PDF（latest.pdf）](https://github.com/ebisucom/wplesson/blob/master/latest.pdf)」に目を通してご利用ください。**
 
-- **WordPress 5.6** での注意点をまとめて最新情報PDFに追加しました。［2020年12月22日］
+- 最新情報PDFの構成を変更しました。**WordPress 5.7** での変更箇所についても追加しています。［2021年3月21日］
 
 - 最新の情報はTwitter ( https://twitter.com/ebisucom ) で発信していますので、参考にしてください。
 

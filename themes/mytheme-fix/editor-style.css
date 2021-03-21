@@ -43,11 +43,20 @@ h6 {
 }
 
 
+[data-align="center"] .wp-block-categories,
+[data-align="center"] .wp-block-latest-posts,
+[data-align="center"] .wp-block-archives,
+[data-align="center"] .wp-block-tag-cloud,
+[data-align="center"] .wp-block-latest-comments,
+[data-align="center"] .wp-block-rss {
+	text-align: center;
+}
+
 /* 横幅 */
 .wp-block:not([data-align="full"]):not([data-align="wide"]) {
-	max-width: calc( 720px + 30px );
+	max-width: calc( 720px );
 }
 
 .wp-block[data-align="wide"] {
-	max-width: calc( 1020px + 30px );
+	max-width: calc( 1020px );
 }
