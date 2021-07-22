@@ -15,7 +15,7 @@
 
 - 最新情報PDFの構成を変更しました。**WordPress 5.8** での変更箇所について追加しています。［2021年7月22日］
 
-- 最新の情報は著者NOTE（https://ebisu.com/notecat/wordpress/）やTwitter ( https://twitter.com/ebisucom ) でも出していますので、参考にしてください。
+- 最新の情報は著者NOTE（https://ebisu.com/notecat/wordpress/ ） や Twitter ( https://twitter.com/ebisucom ) でも出していますので、参考にしてください。
 
 ---
 
