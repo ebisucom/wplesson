@@ -27,6 +27,9 @@ function mytheme_setup() {
 	// 全幅・幅広を有効化
 	add_theme_support( 'align-wide' );
 
+	// ブロックベースのウィジェットを無効化
+	remove_theme_support( 'widgets-block-editor' );
+
 }
 add_action( 'after_setup_theme', 'mytheme_setup' );
 
