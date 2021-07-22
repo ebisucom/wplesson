@@ -16,7 +16,7 @@ WordPressレッスンブック 5.x対応版
 -----
 まずは「最新情報PDF（latest.pdf）」に目を通してご利用ください。
 
-- 最新情報PDFの構成を変更しました。WordPress 5.8 での変更箇所について追加しています。［2021年7月22日］
+- 最新情報PDFを更新しました。WordPress 5.8 への対応方法を追加しています。［2021年7月22日］
 
 - 最新の情報は著者NOTE（https://ebisu.com/notecat/wordpress/）やTwitter ( https://twitter.com/ebisucom ) でも出していますので、参考にしてください。
 -----
